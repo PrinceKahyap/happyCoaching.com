@@ -1,3 +1,10 @@
+// preloader 
+const load = document.getElementById("loading");
+function preloader() {
+    load.style.display = "none";
+};
+
+
 // owlCarousel 
 $(".carousel").owlCarousel({
     margin: 10,
@@ -21,11 +28,6 @@ $(".carousel").owlCarousel({
     }
 });
 
-// preloader 
-const load = document.getElementById("loading");
-function preloader() {
-    load.style.display = "none";
-};
 
 // Hamburger 
 const hamburger = document.querySelector(".hamburger");
@@ -33,7 +35,15 @@ const navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", mobileMenu);
 
-function mobileMenu(){
+function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
-}
+};
+
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach((faq) =>{
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    })
+})

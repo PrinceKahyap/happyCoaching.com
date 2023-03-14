@@ -125,12 +125,35 @@
         text-align: center;
         gap: 30px;
     }
+    .question{
+        padding-bottom: 50px;
+    }
     .foot-bottom-right ul{
         justify-content: center;
+    }
+    .startup-container{
+        padding: 50px 0;
+    }
+    .transform-container{
+        padding-top: 50px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .good-to-container{
+        padding-top: 50px;
     }
     
 }
 @media(max-width: 568px){
+    header{
+        height: 70px;
+    }
+    .nav-menu{
+        top: 70px;
+    }
+    #loading img{
+        width: 25px;
+        height: 25px;
+    }
     .btn {
         width: 300px;
     }    
@@ -175,6 +198,33 @@
     }
     .footer-container{
         grid-template-columns: repeat(1,1fr);
+    }
+    .startup-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .trans-title p{
+        max-width: 100%;
+        font-size: 1.6rem;
+    }
+    .transform-container{
+        padding-top: 50px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .question-item h3 {
+        font-size: 1.6rem;
+    }
+    .question-item i {
+        font-size: 1.6rem;
+    }
+    .answer-item p{
+        font-size: 1.4rem;
+    }
+    .question-container p{
+        font-size: 1.4rem;
+        max-width: 80%;
     }
 }
 @media(max-width: 380px){
@@ -273,5 +323,17 @@
     .footer-info {
         padding-top: 25px;
         padding-bottom: 25px;
+    }
+    .question-item{
+        padding: 20px 0px;
+    }
+    .answer-item{
+        padding: 0 0px;
+    }
+    .question-item h3 {
+        font-size: 1.4rem;
+    }
+    .question-item i{
+        font-size: 1.4rem;
     }
 }
